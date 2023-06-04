@@ -8,13 +8,13 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/GhAbd/to-do.git
+  git clone https://github.com/GhAbd/ToDo-List.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd to-do
+  cd ToDo-List
 ```
 
 Install dependencies

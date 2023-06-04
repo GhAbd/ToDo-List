@@ -44,6 +44,9 @@ const getToDoCollection = async () => {
 export const getToDoList = async () => {
   try {
     const collection = await getToDoCollection();
+    if (collection===null) {
+      return [];
+    }
     return Object.keys(collection).map((item)=>collection[item]).sort((a,b)=>a.createdAt-b.createdAt);
   } catch(e) {
     console.log('getToDoList error',e);
